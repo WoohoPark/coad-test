@@ -12,13 +12,14 @@ public class question_2798 {
 		int answer= 0;
 
 		int[] cards = new int[maxSize];
-		for(int x=0 ; x<mize ; x++)
+		for(int x=0 ; x<maxSize ; x++)
 			cards[x]= sc.nextInt();
 
 		for(int i=0; i<maxSize;i++){
 			for(int j=i+1;j<maxSize;j++){
 				for(int k=j+1;k<maxSize;k++){
 					int sum = cards[i]+cards[j]+cards[k];
+					System.out.println("sum"+sum);
 					if(answer<sum && sum<=targetNumber){
 						answer= sum;
 					}
